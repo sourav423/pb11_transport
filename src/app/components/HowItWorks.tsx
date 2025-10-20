@@ -3,7 +3,7 @@ import { Package, Truck, MapPin } from "lucide-react";
 
 export default function HowItWorks() {
   return (
-    <section className="py-15 px-4 sm:px-6 lg:px-8">
+    <section className="pb-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary-950 dark:text-primary-50 mb-4">
@@ -16,7 +16,7 @@ export default function HowItWorks() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-500 dark:bg-primary-600 rounded-2xl mb-4">
-              <Package className="w-10 h-10 text-white" />
+              <Package className="w-10 h-10 dark:text-white" />
             </div>
             <h3 className="text-xl font-bold mb-2 text-primary-950 dark:text-primary-50">
               Booking
@@ -28,7 +28,7 @@ export default function HowItWorks() {
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-500 dark:bg-primary-600 rounded-2xl mb-4">
               <svg
-                className="w-10 h-10 text-white"
+                className="w-10 h-10 dark:text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ export default function HowItWorks() {
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-500 dark:bg-primary-600 rounded-2xl mb-4">
-              <Truck className="w-10 h-10 text-white" />
+              <Truck className="w-10 h-10 dark:text-white" />
             </div>
             <h3 className="text-xl font-bold mb-2 text-primary-950 dark:text-primary-50">
               Transportation
@@ -57,7 +57,7 @@ export default function HowItWorks() {
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-500 dark:bg-primary-600 rounded-2xl mb-4">
-              <MapPin className="w-10 h-10 text-white" />
+              <MapPin className="w-10 h-10 dark:text-white" />
             </div>
             <h3 className="text-xl font-bold mb-2 text-primary-950 dark:text-primary-50">
               Delivery

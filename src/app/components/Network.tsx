@@ -20,7 +20,7 @@ export default function Network() {
               Extensive Coverage Across the UK
             </h2>
             <p className="mb-6">
-              With our main office in Reading and a wide service area, PB11 Transport provides reliable van rental services throughout the United Kingdom. We are committed to supporting your delivery needs, wherever they may be.
+              With our main office in Reading and a wide service area, PB11 Transport provides reliable van services throughout the United Kingdom. We are committed to supporting your delivery needs, wherever they may be.
             </p>
             <button className="bg-primary-500 text-white px-8 py-3 rounded-md hover:bg-primary-600 font-semibold">
               Read more

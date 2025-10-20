@@ -26,7 +26,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-text-secondary text-sm">
-              PB11 Transport LTD is a premier van rental service based in the UK, offering reliable and affordable solutions for your delivery and transportation needs.
+              PB11 Transport LTD is a premier van service service based in the UK, offering reliable and affordable solutions for your delivery and transportation needs.
             </p>
           </div>
           <div>

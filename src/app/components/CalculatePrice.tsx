@@ -19,7 +19,7 @@ export default function CalculatePrice() {
               Get a Quote
             </h2>
             <p className="text-text-secondary mb-8">
-              Quickly estimate the cost of your van rental.
+              Quickly estimate the cost of your van service.
             </p>
             <Image
               src="/assets/images/user.png"
@@ -36,7 +36,7 @@ export default function CalculatePrice() {
                   <span className="w-6 h-6 bg-primary-500 text-white rounded flex items-center justify-center text-sm">
                     1
                   </span>
-                  Rental Dates
+                  Service Dates
                 </label>
                 <div className="grid grid-cols-2 gap-4">
                   <input
