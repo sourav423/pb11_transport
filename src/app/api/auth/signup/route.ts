@@ -68,13 +68,16 @@ export async function POST(req: NextRequest) {
       },
       { status: 201 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Signup error:', error);
+    const errorMessage =
+      error instanceof Error ? error.message : String(error ?? 'Unknown error');
+
     return NextResponse.json(
       {
         success: false,
         message: 'Internal server error',
-        error: error.message,
+        error: errorMessage,
       },
       { status: 500 }
     );

@@ -16,14 +16,14 @@ export default function SignupPage() {
     password: '',
     confirmPassword: '',
   });
-  const [errors, setErrors] = useState<any>({});
+  const [errors, setErrors] = useState<Record<string, string[]>>({});
   const [apiError, setApiError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev: any) => ({ ...prev, [name]: '' }));
+    setErrors((prev) => ({ ...prev, [name]: '' }));
     setApiError('');
   };
 
@@ -57,7 +57,7 @@ export default function SignupPage() {
 
       dispatch(setCredentials({ user: data.user, token: data.token }));
       router.push('/');
-    } catch (error: any) {
+    } catch {
       setApiError('An unexpected error occurred. Please try again.');
       dispatch(setLoading(false));
     } finally {

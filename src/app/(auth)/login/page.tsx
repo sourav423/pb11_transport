@@ -14,14 +14,14 @@ export default function LoginPage() {
     email: '',
     password: '',
   });
-  const [errors, setErrors] = useState<any>({});
+  const [errors, setErrors] = useState<Record<string, string[]>>({});
   const [apiError, setApiError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev: any) => ({ ...prev, [name]: '' }));
+    setErrors((prev) => ({ ...prev, [name]: '' }));
     setApiError('');
   };
 
@@ -55,7 +55,7 @@ export default function LoginPage() {
 
       dispatch(setCredentials({ user: data.user, token: data.token }));
       router.push('/');
-    } catch (error: any) {
+    } catch {
       setApiError('An unexpected error occurred. Please try again.');
       dispatch(setLoading(false));
     } finally {
